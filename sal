@@ -1,0 +1,12 @@
+read bp
+if [ $bp -lt 1500 ]
+then
+hra=$(( bp*10/100 ))
+da=$(( bp*90/100 ))
+elif [ $bp -gt 1500 ]
+then
+hra=500
+da=$(( bp*98/100 ))
+fi
+gp=$(( bp+hra+da ))
+echo $gp
