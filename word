@@ -1,0 +1,13 @@
+if [ $# -eq 0 ]
+then
+echo "give arguments"
+exit
+fi
+echo "enter word"
+read w
+for file in $*
+do
+sed "/$w/d" $file|tee tmp
+mv tmp $file
+done
+

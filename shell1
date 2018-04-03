@@ -1,0 +1,10 @@
+read a
+read b
+read c
+read d
+sum=$(( a + b+ c+ d ))
+prod=$(( a * b * c * d ))
+avg=$(( sum / 4 ))
+echo $sum
+echo $prod
+echo $avg

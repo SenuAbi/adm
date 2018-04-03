@@ -1,0 +1,8 @@
+read n
+n1=$(( $n % 2 ))
+if [ $n1 -eq 0 ]
+then
+echo "even"
+else
+echo "odd"
+fi
